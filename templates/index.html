@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Details</h1>
+
+        <form id="studentForm">
+
+            <input type="number" id="sno" placeholder="Student Number" required>
+
+            <input type="text" id="name" placeholder="Name" required>
+
+            <input type="number" id="age" placeholder="Age" required>
+
+            <input type="text" id="mobile" placeholder="Mobile Number" required>
+
+            <button type="submit">Save</button>
+
+        </form>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
